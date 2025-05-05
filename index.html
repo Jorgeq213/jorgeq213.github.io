@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vega-Lite Interactive Visualizations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dropdown for selecting the attribute to visualize -->
+  <div>
+    <label for="attributeSelect">Select Attribute:</label>
+    <select id="attributeSelect">
+      <option value="Available Bikes">Available Bikes</option>
+      <option value="Percent Full">Percent Full</option>
+      <option value="Docks in Service">Docks in Service</option>
+    </select>
+  </div>
 
+  <!-- Divs where the charts will be embedded -->
+  <div id="chart1" style="width: 60%; height: 400px;"></div>
+  <div id="chart2" style="width: 60%; height: 400px;"></div>
+  <div id="chart3" style="width: 60%; height: 400px;"></div>
+  <div id="chart4" style="width: 100%; height: 600px; margin-top: 40px;"></div>
+  <div id="chart5" style="width: 100%; height: 600px; margin-top: 40px;"></div>
+  <div id="chart6" style="width: 100%; height: 600px; margin-top: 40px;"></div>
+  <div id="chart7" style="width: 100%; height: 600px; margin-top: 40px;"></div>
+  <!-- Include Vega-Lite and Vega-Embed scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6" defer></script>
+
+  <!-- Your custom script.js -->
+  <script src="script.js" defer></script>
+</body>
+</html>
